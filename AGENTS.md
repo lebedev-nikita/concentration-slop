@@ -7,3 +7,5 @@ Native macOS 14+ utility: Swift, AppKit/SwiftUI, AVFoundation. YouTube links res
 - Run subprocesses off the main actor; support cancellation and a timeout. Pass arguments directly to Process, never through a shell. Treat extracted stream URLs as temporary and keep them out of logs and preferences.
 - After changes, run `swift test` and `./scripts/build-app.sh`. For playback/window changes, also check a real YouTube link, looping, hide/show and focus over another app. Run `CONCENTRATION_SLOP_WINDOW_TEST=1 swift test --filter LogicalWindowMonitorTests` for attachment changes (requires Accessibility access).
 - Keep README.md for users. Record product/design decisions in PRODUCT.md and DESIGN.md only when they change.
+
+Homebrew distribution lives in [jeff-business/homebrew-tap](https://github.com/jeff-business/homebrew-tap). After publishing a release, update its cask version and archive SHA-256 there; do not replace published release assets.

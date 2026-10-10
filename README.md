@@ -8,11 +8,13 @@ Requires macOS 14+ and [Homebrew](https://brew.sh). Works on Apple Silicon and I
 
 ## Install
 
-Download the app from the [latest release](https://github.com/lebedev-nikita/concentration-slop/releases/latest), unzip it, and move **Concentration Slop.app** to **Applications**. Install its playback dependencies:
+Install with Homebrew (playback dependencies are included):
 
 ```sh
-brew install yt-dlp deno
+brew install --cask jeff-business/tap/concentration-slop
 ```
+
+Alternatively, download the app from the [latest release](https://github.com/jeff-business/concentration-slop/releases/latest), unzip it, move **Concentration Slop.app** to **Applications**, and run `brew install yt-dlp deno`.
 
 Open Concentration Slop from Applications. Releases are ad-hoc signed and not notarized by Apple; macOS may require approval under System Settings → Privacy & Security after the first launch attempt.
 
